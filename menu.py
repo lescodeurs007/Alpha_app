@@ -17,11 +17,11 @@ def select_items():
         #if fruits
         if 'fruits' in ch:
             st.write("FRUITS")
-            for file in os.listdir(base+'fruits'):
+            for file in os.listdir(base+'\\fruits'):
                 if file.endswith(".jpg"):
-                    image=Image.open(os.path.join(base+"fruits", file))
+                    image=Image.open(os.path.join(base+"\\fruits", file))
                     st.image(image,width=100)
-                    f=os.path.join(base+"fruits", file)
+                    f=os.path.join(base+"\\fruits", file)
                     agree = st.checkbox(f[86:-4])
                 if agree:
                     fruits.append(f[86:-4])
