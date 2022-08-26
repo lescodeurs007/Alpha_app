@@ -15,8 +15,7 @@ magicEnabled=False
 # cursor=mycon.cursor()
 def get_latlng(cat):
     ret = []
-    cursor.execute('''SELECT * FROM Shop_Details''')
-    data = cursor.fetchall()
+    data = getdata_map()
     print(data)
     for i in data:
         for j in cat:
@@ -42,16 +41,6 @@ def check(arr, lat, lng, acc=0.1):
 
 
 def start1():
-    try:
-        if mycon.is_connected():
-            pass
-        else:
-            mycon.close()
-            mysqlconnection()
-    except:
-        mysqlconnection()
-    global cursor
-    cursor=mycon.cursor()
     st.title("Search For shops")
     arg = """
     navigator.geolocation.getCurrentPosition(
