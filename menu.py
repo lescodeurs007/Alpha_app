@@ -31,7 +31,7 @@ def select_items():
         #if snacks
         if 'snacks' in ch:
             for k in ['cocount water', 'coffee', 'lemon juice', 'tea']:
-                    agree2= st.checkbox(k)
+                agree2= st.checkbox(k)
                 if agree2:
                     snacks.append(k)
         #if juices
