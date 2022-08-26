@@ -1,0 +1,9 @@
+streamlit
+mysql-connector-python
+folium
+streamlit-folium
+streamlit-bokeh-events
+bokeh
+streamlit-authenticator
+streamlit-option-menu
+Pillow
