@@ -17,14 +17,10 @@ def select_items():
         #if fruits
         if 'fruits' in ch:
             st.write("FRUITS")
-            for file in os.listdir(base+'\\fruits'):
-                if file.endswith(".jpg"):
-                    image=Image.open(os.path.join(base+"\\fruits", file))
-                    st.image(image,width=100)
-                    f=os.path.join(base+"\\fruits", file)
-                    agree = st.checkbox(f[86:-4])
+            for i in ['apple', 'Bananas', 'cherries', 'chestnut', 'coconut', 'dates', 'grape_pear_mandarine', 'huckleberry', 'kachi', 'kiwi', 'limes', 'lychee', 'mango', 'pear', 'physalis', 'plums_pears', 'pomegranate', 'raspberries', 'salak', 'strawberries', 'tangelo']:
+                agree = st.checkbox(i)
                 if agree:
-                    fruits.append(f[86:-4])
+                    fruits.append(i)
         #if vegetables
         if 'vegetables' in ch:
             st.write("VEGETABLES")
