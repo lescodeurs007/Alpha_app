@@ -10,9 +10,9 @@ from streamlit_folium import folium_static
 from streamlit_bokeh_events import streamlit_bokeh_events
 import folium
 from databasecreation import *
+from details_check import *
 magicEnabled=False
-# mycon=sqltor.connect(host="remotemysql.com",user="Xqzz2jfHtP",database="Xqzz2jfHtP",password="aAF2op52rt")
-# cursor=mycon.cursor()
+
 def get_latlng(cat):
     ret = []
     data = getdata_map()
