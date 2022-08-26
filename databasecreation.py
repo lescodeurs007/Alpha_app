@@ -5,7 +5,7 @@ import mysql.connector as sqltor
 def mysqlconnection():
     global mycon,cursor#declaring global variables
     #establishing mysql connection
-    mycon=sqltor.connect(host="remotemysql.com",user="Xqzz2jfHtP",database="Xqzz2jfHtP",password="aAF2op52rt")
+    mycon=mysql.connector.connect(**st.secrets["mysql"]
 
     if mycon.is_connected():#checking if connection is made
         print("yes")
