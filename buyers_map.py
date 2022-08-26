@@ -10,7 +10,7 @@ from streamlit_folium import folium_static
 from streamlit_bokeh_events import streamlit_bokeh_events
 import folium
 from databasecreation import *
-from details_checking import *
+from detail_checking import *
 magicEnabled=False
 
 def get_latlng(cat):
