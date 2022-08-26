@@ -5,10 +5,9 @@ import mysql.connector as sqltor
 def mysqlconnection():
     global mycon,cursor#declaring global variables
     #establishing mysql connection
-    mycon=mysql.connector.connect(**st.secrets["mysql"]
+    mycon=sqltor.connect(**st.secrets["mysql"]
 
     if mycon.is_connected():
-        print("yes")
         cursor=mycon.cursor()#creating mysql cusrsor
         createtablefn()#calling creation of tables function
     else:
