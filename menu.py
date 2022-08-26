@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from  PIL import Image
 from detail_checking import *
-base="C:\\Users\\Srinitish\\PycharmProjects\\pythonProject\\venv\\randomcheck\\Menu program\\"
+base="Menu program\\"
 def select_items():
 #empty lists
     fruits=[]
