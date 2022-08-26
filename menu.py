@@ -30,13 +30,13 @@ def select_items():
                     vegetables.append(j)
         #if snacks
         if 'snacks' in ch:
-            for k in ['cocount water', 'coffee', 'lemon juice', 'tea']:
+            for k in ['adhirasam', 'anarsa', 'bhel puri', 'dhai puri', 'kaalan', 'masala puri', 'pani puri', 'vada pav']:
                 agree2= st.checkbox(k)
                 if agree2:
                     snacks.append(k)
         #if juices
         if 'juices' in ch:
-            for m in ['adhirasam', 'anarsa', 'bhel puri', 'dhai puri', 'kaalan', 'masala puri', 'pani puri', 'vada pav']:
+            for m in ['cocount water', 'coffee', 'lemon juice', 'tea']:
                 agree3= st.checkbox(m)
                 if agree3:
                     juices.append(m)
