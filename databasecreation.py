@@ -1,6 +1,6 @@
 #importing modules
 import mysql.connector as sqltor
-
+import streamlit as st
 #defining main function
 def mysqlconnection():
     global mycon,cursor#declaring global variables
