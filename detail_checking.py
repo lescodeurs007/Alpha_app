@@ -175,6 +175,10 @@ def insertitems(Phone_Num,items_dict):
 	mycon.commit()
 	return 1
 
+def getdata_map():
+	cursor.execute('''SELECT * FROM Shop_Details''')
+	data=cursor.fetchall()
+	return data
 # insertlocation(9876543210,'10.343434','`17.82918291') checked and converted to big int
 
 
