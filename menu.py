@@ -31,7 +31,6 @@ def select_items():
         #if snacks
         if 'snacks' in ch:
             for k in ['cocount water', 'coffee', 'lemon juice', 'tea']:
-                if file2.endswith(".jpg"):
                     agree2= st.checkbox(k)
                 if agree2:
                     snacks.append(k)
