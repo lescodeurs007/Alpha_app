@@ -5,8 +5,7 @@ import streamlit_authenticator as stauth
 import streamlit as st
 import mysql.connector as sqltor
 
-mycon = sqltor.connect(host="remotemysql.com", user="Xqzz2jfHtP", database="Xqzz2jfHtP", password="aAF2op52rt")
-cursor=mycon.cursor()
+
 #defining login check function with 2 paramaters for phone number and password
 def logincheck():
 
